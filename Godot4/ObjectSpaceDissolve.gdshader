@@ -16,10 +16,14 @@ uniform vec2 textureUVScale = vec2(1.);
 const float tao = 2. * 3.14;
 
 varying vec3 world_pos;
+varying smooth vec3 vertexOS;
+void vertex()
+{
+	vertexOS = VERTEX;
+}
 
 void fragment() {
-	// TODO: fix this for Godot 4 - it's not keeping in Object Space, if the camera or the object moves, the dissolve is also affected
-	vec3 position = (inverse(MODEL_MATRIX) * vec4(VERTEX, 1.0)).xyz;
+	vec3 position = vertexOS;
 	
 	vec4 text = texture(texture, UV);
 	vec4 blend = texture(blendTexture, UV * blendUVScale);
