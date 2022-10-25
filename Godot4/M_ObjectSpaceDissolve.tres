@@ -1,0 +1,18 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://djbgs8vghpe61"]
+
+[ext_resource type="Shader" path="res://ObjectSpaceDissolve.gdshader" id="1_j8nkd"]
+[ext_resource type="Texture2D" uid="uid://cyovw5h023e20" path="res://resources/texture1.png" id="2_dqc6j"]
+[ext_resource type="Texture2D" uid="uid://c2o6ugv3g1lap" path="res://resources/transparent.png" id="3_jfake"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_j8nkd")
+shader_parameter/blendTexture = ExtResource("2_dqc6j")
+shader_parameter/blendUVScale = null
+shader_parameter/borderColor = Color(0.988235, 1, 0, 1)
+shader_parameter/borderHeight = 0.05
+shader_parameter/emissionIntensity = 1.0
+shader_parameter/offset = 0.981
+shader_parameter/texture = ExtResource("3_jfake")
+shader_parameter/textureUVScale = Vector2(1, 1)
+shader_parameter/up = true

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxgn4i72pj1gx"]
+
+[ext_resource type="ArrayMesh" uid="uid://uj8c4a5aep0n" path="res://resources/suzanne.obj" id="1_qlvem"]
+[ext_resource type="Material" uid="uid://djbgs8vghpe61" path="res://M_ObjectSpaceDissolve.tres" id="2_w3hka"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Suzanne" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.836575, -0.365327, -0.408263, 0.313811, 0.930382, -0.189503, 0.449071, 0.0304161, 0.892978, -0.743679, -0.273911, 0)
+mesh = ExtResource("1_qlvem")
+surface_material_override/0 = ExtResource("2_w3hka")
