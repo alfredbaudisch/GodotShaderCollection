@@ -19,7 +19,7 @@ varying vec3 world_pos;
 varying smooth vec3 vertexOS;
 void vertex()
 {
-	vertexOS = (vec4(VERTEX, 1.0) * MODEL_MATRIX).xyz;
+	vertexOS = VERTEX;
 }
 
 void fragment() {
