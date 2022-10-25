@@ -23,9 +23,7 @@ void vertex()
 }
 
 void fragment() {
-	// TODO: fix this for Godot 4 - it's not keeping in Object Space, if the camera or the object moves, the dissolve is also affected
-	vec3 position = (inverse(MODEL_MATRIX) * vec4(VERTEX, 1.0)).xyz;
-	position = vertexOS;
+	vec3 position = vertexOS;
 	
 	vec4 text = texture(texture, UV);
 	vec4 blend = texture(blendTexture, UV * blendUVScale);
