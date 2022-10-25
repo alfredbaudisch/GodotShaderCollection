@@ -1,6 +1,6 @@
 # Godot Object Space Dissolve Shader
 
-Godot Shader that dissolves the object with respect to Object Space. Even if the object is transformed in world/global space (moved around and rotated), the dissolve position and offset is preserved.
+Godot Shader that dissolves the object with respect to Object Space. Even if the object is transformed in world/global space (moved around and rotated), the dissolve position and offset are preserved.
 
 ## Godot 3
 
