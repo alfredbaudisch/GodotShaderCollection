@@ -6,12 +6,12 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_r1tnr"]
 render_priority = 0
 shader = ExtResource("2_1xsp7")
-shader_parameter/DissolveAmount = 0.506
-shader_parameter/DissolveDirection = Vector3(-1, 0, 0)
+shader_parameter/DissolveAmount = 0.376
+shader_parameter/DissolveDirection = Vector3(1, -1, 0)
 
 [node name="Node3D" type="Node3D"]
 
 [node name="Suzanne" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.986541, 0.162107, 0.0214138, -0.163515, 0.978044, 0.129196, 0, -0.130959, 0.991388, -0.633491, -0.273911, 0.788634)
+transform = Transform3D(0.743105, 0.134963, -0.655424, -0.130969, 0.98984, 0.0553344, 0.656234, 0.0447212, 0.753231, -0.633491, -0.273911, 0.0663132)
 mesh = ExtResource("1_qlvem")
 surface_material_override/0 = SubResource("ShaderMaterial_r1tnr")
