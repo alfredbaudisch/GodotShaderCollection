@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dle6gp1xh0x4y"]
+
+[ext_resource type="ArrayMesh" uid="uid://uj8c4a5aep0n" path="res://resources/suzanne.obj" id="1_qlvem"]
+[ext_resource type="Shader" path="res://ObjectSpaceDissolveWithDirection.gdshader" id="2_1xsp7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r1tnr"]
+render_priority = 0
+shader = ExtResource("2_1xsp7")
+shader_parameter/DissolveAmount = 0.506
+shader_parameter/DissolveDirection = Vector3(-1, 0, 0)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Suzanne" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.986541, 0.162107, 0.0214138, -0.163515, 0.978044, 0.129196, 0, -0.130959, 0.991388, -0.633491, -0.273911, 0.788634)
+mesh = ExtResource("1_qlvem")
+surface_material_override/0 = SubResource("ShaderMaterial_r1tnr")

@@ -6,6 +6,6 @@
 [node name="Node3D" type="Node3D"]
 
 [node name="Suzanne" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.836575, -0.365327, -0.408263, 0.313811, 0.930382, -0.189503, 0.449071, 0.0304161, 0.892978, -0.743679, -0.273911, 0)
+transform = Transform3D(0.364148, -0.120587, -0.923502, -0.642274, 0.685557, -0.342775, 0.674448, 0.717962, 0.172195, -0.594141, -0.273911, 0.788634)
 mesh = ExtResource("1_qlvem")
 surface_material_override/0 = ExtResource("2_w3hka")

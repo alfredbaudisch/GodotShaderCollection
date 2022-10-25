@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://c0r3tn7dgd2j6"]
+
+[ext_resource type="Shader" path="res://ObjectSpaceDissolveWithDirection.gdshader" id="1_1fqko"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_1fqko")
+shader_parameter/DissolveAmount = 0.43
+shader_parameter/DissolveDirection = Vector3(-1, 0, 0)
