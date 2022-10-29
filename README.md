@@ -1,6 +1,6 @@
 # Godot 4 Shader Collection
 
-The shaders are made for Godot 4, unless otherwise specified.
+A collection of general usage 3D Shaders for Godot 4.
 
 ---
 
